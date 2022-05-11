@@ -1,4 +1,11 @@
 body{
     background-color: #343440;
     color: azure;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 50%;
+    margin-top: 15%;
 }
