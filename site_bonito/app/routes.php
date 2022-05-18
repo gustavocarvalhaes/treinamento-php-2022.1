@@ -8,4 +8,9 @@ use App\Core\Router;
 
     $router->get('admin', 'AdmController@view');
 
+    $router->post('admin/create', 'AdmController@create');
+
+    $router->post('admin/delete', 'AdmController@delete');
+
+
 ?> 

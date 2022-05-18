@@ -10,7 +10,7 @@
             <div class="modal-body">
               <p>Vou sentir saudade da tropa de exploração :(</p>
               <div class="modal-footer">
-                <form id="form_deleta" action="/admin/usuarios/delete" method="POST">
+                <form id="form_deleta" action="/admin/delete" method="POST">
                   <input type="hidden" value="<?= $function->id ?>" name="id">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                   <button type="submit" class="btn btn-warning" id="conf-modal">Excluir</button>

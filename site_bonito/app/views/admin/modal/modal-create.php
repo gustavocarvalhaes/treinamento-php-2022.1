@@ -10,37 +10,27 @@
             <div class="modal-body">
                 <div class="formulario-adiciona">
                     <h2>Preencha o formulário para adicionar novos Usuários</h2>
-                    <form action="/admin/usuarios/create" method="POST">
+                    <form action="/admin/create" method="POST">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nome de usuário:</label>
-                            <input type="text" class="form-control" id="nameFormInput" name='nome' placeholder="Izuku Midoriya">
+                            <input type="text" class="form-control" id="nameFormInput" name='nome' placeholder=":)">
                             <small id="emailHelp" class="form-text text-muted">Indique o nome para o cadastro</small>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email:</label>
-                            <input type="text" class="form-control" id="nameFormInput" name='email' placeholder="orumaito@email">
+                            <input type="text" class="form-control" id="nameFormInput" name='email' placeholder="maromba@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Senha:</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" name='senha' placeholder="Oru_Maito">
+                            <input type="password" class="form-control" id="exampleInputPassword1" name='senha' placeholder=" ">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Informações extras sobre o usuário:</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='informacoes' placeholder="Vou ser o herói número 1!"></textarea>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile1">Foto de perfil:</label>
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1" name='foto_perfil'>
-                        </div> 
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                           <button type="submit" class="btn btn-warning" id="conf-modal">Adicionar</button>
                         </div>
                     </form>
-                    
                 </div>
             </div>
-    
           </div>
         </div>
       </div>

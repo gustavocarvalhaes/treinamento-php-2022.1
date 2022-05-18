@@ -11,10 +11,6 @@
             <form action="/admin/usuarios/show" method="GET">
               <input type="hidden" value="<?=$function->id?>" name="id">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Foto de Perfil:</label>
-                    <img class="foto_perfil" src="../../public/img/adm_usuarios/<?= $function->foto_perfil ?> ">
-                </div>
-                <div class="form-group">
                     <label for="exampleInputEmail1">Nome de usuário:</label>
                     <input type="text" class="form-control" id="nameFormInput" value="<?=$function->nome?>" readonly placeholder="">     
                 </div>
@@ -25,10 +21,6 @@
                 <div class="form-group">
                     <label for="exampleInputPassword1">Senha:</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" value="<?=$function->senha?>" readonly placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Informações extras sobre o usuário:</label>
-                    <input class="form-control" id="exampleFormControlTextarea1" rows="3" value="<?=$function->informacoes?>" readonly placeholder="">
                 </div>
             </form>
         </div>

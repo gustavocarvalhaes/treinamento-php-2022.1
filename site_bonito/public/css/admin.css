@@ -1,5 +1,6 @@
-body{
-    background-color: #343434;
+html, body{
+    /* background-color: #343434; */
+    /* background-image: url(../img/erwin.png); */
 }
 
 #adicionar {
@@ -8,11 +9,14 @@ body{
     background-color: 0;
 }
 
-
 .table {
     text-align: end;
 }
 
 .botaozinho {
     margin-left: 4px;
+}
+
+.botao {
+    margin-top: 200px;
 }

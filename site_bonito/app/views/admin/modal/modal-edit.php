@@ -24,14 +24,6 @@
                         <label for="exampleInputPassword1">Senha:</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" name='senha' value="<?=$function->senha?>" placeholder="">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Informações extras sobre o usuário:</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" name='informacoes' value="<?=$function->informacoes?>" placeholder="">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlFile1">Foto de perfil:</label>
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name='foto_perfil' value="<?=$function->foto_perfil?>">
-                    </div> 
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                       <button type="submit" class="btn btn-warning" id="conf-modal">Salvar Alterações</button>
