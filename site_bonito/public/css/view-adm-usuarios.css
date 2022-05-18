@@ -1,0 +1,18 @@
+body{
+    background-color: #343434;
+}
+
+#adicionar {
+    width: 40%;
+    color: #fbfbfb;
+    background-color: 0;
+}
+
+
+.table {
+    text-align: end;
+}
+
+.botaozinho {
+    margin-left: 4px;
+}
