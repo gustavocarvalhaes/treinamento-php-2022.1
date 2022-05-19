@@ -8,7 +8,7 @@
           </button>
         </div>
         <div class="modal-body">
-            <form action="/admin/usuarios/show" method="GET">
+            <form action="/admin/show" method="GET">
               <input type="hidden" value="<?=$function->id?>" name="id">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nome de usuário:</label>

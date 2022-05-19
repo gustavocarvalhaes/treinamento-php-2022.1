@@ -10,7 +10,7 @@
             <div class="modal-body">
                 <div class="formulario-adiciona">
                   <h2>Altere os dados desejados</h2>
-                  <form action="/admin/usuarios/update" method="POST">
+                  <form action="/admin/update" method="POST">
                     <input type="hidden" value="<?= $function->id ?>" name="id">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nome de usuário:</label>

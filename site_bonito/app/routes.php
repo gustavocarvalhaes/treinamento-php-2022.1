@@ -12,5 +12,9 @@ use App\Core\Router;
 
     $router->post('admin/delete', 'AdmController@delete');
 
+    $router->get('admin/show', 'AdmController@show');
+
+    $router->post('admin/update', 'AdmController@update');
+
 
 ?> 

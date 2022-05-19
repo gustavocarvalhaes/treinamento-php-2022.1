@@ -23,7 +23,17 @@ class AdmController
 
     public function show()
     {
+        // $parameters = [
 
+        //     'nome' => $_GET['nome'],
+        //     'email' => $_GET['email'],
+        //     'senha' => $_GET['senha'],
+        // ];
+
+
+        app::get('database')->select($_GET['id'], 'usuarios')->get();
+
+        header('Location: /admin');
     }
 
     public function create()
@@ -51,7 +61,15 @@ class AdmController
 
     public function update()
     {
-        
+        $parameters = [
+
+            'nome' => $_POST['nome'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['senha'],
+        ];
+        app::get('database')->edit($_POST['id'], 'usuarios', $parameters);
+
+        header('Location: /admin');  
     }
 
     public function delete()
