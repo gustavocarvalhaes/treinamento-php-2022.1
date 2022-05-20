@@ -1,7 +1,9 @@
 html, body{
-    /* background-color: #343434; */
-    /* background-image: url(../img/erwin.png); */
-}
+    background-color: #343434;
+    background-image: url(../img/erwin.png);
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-repeat: no-repeat;}
 
 #adicionar {
     width: 40%;
@@ -18,5 +20,5 @@ html, body{
 }
 
 .botao {
-    margin-top: 200px;
+    margin-top: 100px;
 }
