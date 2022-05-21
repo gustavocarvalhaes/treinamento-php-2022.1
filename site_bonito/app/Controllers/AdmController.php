@@ -17,20 +17,12 @@ class AdmController
 
         ];
     
-        return view('admin/crud', compact("usuarios"));
+        return view('admin/crud', $tables);
 
     }
 
     public function show()
     {
-        // $parameters = [
-
-        //     'nome' => $_GET['nome'],
-        //     'email' => $_GET['email'],
-        //     'senha' => $_GET['senha'],
-        // ];
-
-
         app::get('database')->select($_GET['id'], 'usuarios')->get();
 
         header('Location: /admin');
