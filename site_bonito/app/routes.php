@@ -14,5 +14,4 @@ use App\Core\Router;
 
     $router->post('admin/update', 'AdmController@update');
 
-
 ?> 

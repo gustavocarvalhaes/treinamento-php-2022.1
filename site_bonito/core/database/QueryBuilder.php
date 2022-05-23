@@ -53,7 +53,7 @@ class QueryBuilder
 
         $sql = sprintf(
             'INSERT INTO %s (%s) VALUES (%s)', 
-            $table,
+            $table, 
             implode(', ', array_keys($parametros)),
             ':' . implode(', :', array_keys($parametros))
         );
