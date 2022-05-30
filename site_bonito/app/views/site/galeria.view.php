@@ -12,20 +12,23 @@
 <body>
     <div class="container">
 
-            <div class="row d-flex flex-wrap justify-content-center card-columns cadiv">
-  
-              <?php foreach ($fotos as $imagem) : ?>
-                <a class="linkcard" href="">
-                  <div class="card m-2 ccprod" style="width: 18rem;">
-                      <img class="card-img-top img-responsive cim" src="../../public/img/<?= $imagem->imagem ?>" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text nome"><?= $imagem->nome ?></p>
-                        <p class="card-text preco"> R$ <?= number_format($imagem->preco ,2,',') ?></p>
-                      </div>
-                  </div>
-                </a>
-              <?php endforeach; ?>
+      <div class="row d-flex flex-wrap justify-content-center card-columns cadiv">
+
+        <?php foreach ($fotos as $imagem) : ?>
+          <a class="linkcard" href="">
+            <div class="card m-2 ccprod" style="width: 18rem;">
+                <img class="card-img-top img-responsive cim card-image" src="../../public/img/<?= $imagem->imagem ?>" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text nome"><?= $imagem->nome ?></p>
+                  <p class="card-text preco"> R$ <?= number_format($imagem->preco ,2,',') ?></p>
+                </div>
             </div>
+          </a>
+        <?php endforeach; ?>
+      </div>
+
+      <?php require './app/views/includes/pagination.php' ?>
+
     </div> <!-- Fim container -->
 
               
