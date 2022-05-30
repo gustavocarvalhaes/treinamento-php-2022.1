@@ -14,7 +14,7 @@
 
             <div class="row d-flex flex-wrap justify-content-center card-columns cadiv">
   
-                <?php foreach ($fotos as $imagem) : ?>
+              <?php foreach ($fotos as $imagem) : ?>
                 <a class="linkcard" href="">
                   <div class="card m-2 ccprod" style="width: 18rem;">
                       <img class="card-img-top img-responsive cim" src="../../public/img/<?= $imagem->imagem ?>" alt="Card image cap">
@@ -24,12 +24,10 @@
                       </div>
                   </div>
                 </a>
-                <?php endforeach; ?>
-  
+              <?php endforeach; ?>
             </div>
     </div> <!-- Fim container -->
 
-    <?php require 'footer.php' ?>
               
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
