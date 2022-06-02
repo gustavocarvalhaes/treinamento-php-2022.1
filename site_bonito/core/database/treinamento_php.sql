@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 30-Maio-2022 às 21:40
--- Versão do servidor: 10.4.21-MariaDB
--- versão do PHP: 8.0.12
+-- Host: localhost
+-- Generation Time: Jun 02, 2022 at 05:02 AM
+-- Server version: 10.7.3-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `treinamento_php`
+-- Database: `treinamento_php`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `fotos`
+-- Table structure for table `fotos`
 --
 
 CREATE TABLE `fotos` (
@@ -35,21 +35,46 @@ CREATE TABLE `fotos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `fotos`
+-- Dumping data for table `fotos`
 --
 
 INSERT INTO `fotos` (`id`, `nome`, `preco`, `imagem`) VALUES
-(1, 'blusa1', '12', 'camisa1.jpg'),
-(2, 'camisa2', '1212122', 'camisa2.jpg'),
-(3, 'aaa12', '212', 'camisa1.jpg'),
-(4, 'asas', '1234', 'camisa1.jpg'),
-(5, 'aaaa', '1234', 'bat4.1.jpg'),
-(6, 'asass', '12344', 'bat2.jpg');
+(1, 'blusa', '271.82', 'camisa1.jpg'),
+(2, 'camisa', '314.15', 'camisa2.jpg'),
+(3, 'blusa preta', '141.42', 'camisa1.jpg'),
+(4, 'blusa black', '1234', 'camisa1.jpg'),
+(5, 'batmaninho', '1234', 'bat4.1.jpg'),
+(6, 'Batman', '12344', 'bat2.jpg'),
+(7, 'Liga da Justice', '1343', 'bat4.jpg'),
+(8, 'Justice liga', '12', 'bat4.jpg'),
+(9, 'Mortal KomBatman', '150', 'bat2.jpg'),
+(10, 'Camisa light', '125.50', 'camisa2.jpg'),
+(11, 'Conjunto dark', '100', 'conjunto1.jpg'),
+(12, 'Cosplay', '100', 'cosplay1.jpg'),
+(13, 'Cosplay', '100', 'cosplay2.jpg'),
+(14, 'Cosplay', '100', 'cosplay3.jpg'),
+(15, 'Moletom', '100', 'moletom1.jpg'),
+(16, 'Moletom', '100', 'moletom2.jpg'),
+(17, 'Moletom', '100', 'moletom3.jpg'),
+(18, 'Moletom', '100', 'moletom4.jpg'),
+(19, 'Moletom', '100', 'moletom5.jpg'),
+(20, 'Moletom', '100', 'moletom6.jpg'),
+(21, 'Moletom', '100', 'moletom7.jpg'),
+(22, 'Moletom', '100', 'moletom8.jpg'),
+(23, 'Moletom', '100', 'moletom9.jpg'),
+(24, 'Moletom', '100', 'moletom10.jpg'),
+(25, 'Moletom', '100', 'moletom11.jpg'),
+(26, 'Moletom', '100', 'moletom12.jpg'),
+(27, 'Moletom', '100', 'moletom13.png'),
+(28, 'Moletom', '100', 'moletom14.jpg'),
+(29, 'Moletom', '100', 'moletom15.jpg'),
+(30, 'camisa legal', '123', 'camisa1.jpg'),
+(31, 'camisa show', '321', 'camisa2.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuarios`
+-- Table structure for table `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -60,7 +85,7 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `usuarios`
+-- Dumping data for table `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
@@ -69,33 +94,33 @@ INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
 (13, 'oioioioi222', 'gustavo.ferreira@codejr.com.br', 'oooo');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `fotos`
+-- Indexes for table `fotos`
 --
 ALTER TABLE `fotos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `usuarios`
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `fotos`
+-- AUTO_INCREMENT for table `fotos`
 --
 ALTER TABLE `fotos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- AUTO_INCREMENT de tabela `usuarios`
+-- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
