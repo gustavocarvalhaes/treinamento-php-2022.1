@@ -7,3 +7,8 @@ body{
     font-size: large;
     font-style: oblique;
 }
+
+.linkcard .card-image {
+    height: 18rem;
+    object-fit: cover;
+}
